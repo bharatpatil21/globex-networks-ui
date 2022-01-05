@@ -5,8 +5,6 @@ import { ChangeRequestComponent } from './change-request.component';
 const routes: Routes = [
   {
     path: '', component: ChangeRequestComponent,
-    children: [
-    ]
   }
 ];
 
