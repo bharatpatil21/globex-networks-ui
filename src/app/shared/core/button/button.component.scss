@@ -1,0 +1,16 @@
+@import "../../../../styles.scss";
+
+.core--btn {
+  width: 100%;
+  border: none;
+  background: $primary-color;
+  color: #fff;
+  button {
+    width: 100%;
+    border: none;
+    color: #fff;
+  }
+  .btn:hover {
+    background: $secondary-color;
+  }
+}

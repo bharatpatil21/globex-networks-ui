@@ -1,1 +1,12 @@
-<p>input works!</p>
+<div class="mb-4 core--input">
+  <div *ngIf="label">
+    <label class="form-label" for="typeEmailX-2">{{label}}</label>
+  </div>
+  <input
+    type={{type}}
+    placeholder={{placeholder}}
+    pattern={{pattern}}
+    (ngModel)="modelName"
+    (change)="updateInputValue($event)"
+    class="form-control form-control-lg" />
+</div>

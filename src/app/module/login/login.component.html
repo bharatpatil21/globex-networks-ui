@@ -1,4 +1,29 @@
-<div class="login">
-  <p>login works!</p>
-  <app-input></app-input>
-</div>
+<section class="login">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+      <div class="card">
+        <div class="card-body p-5 text-center">
+          <app-input
+            [type]="'text'"
+            [placeholder]="'username'"
+            [required]="true"
+            [modelName]="'username'"
+            (updateInputValueEvent)={}
+          ></app-input>
+          <app-input
+            [type]="'password'"
+            [placeholder]="'password'"
+            [required]="true"
+            [modelName]="'password'"
+            (updateInputValueEvent)={}
+            ></app-input>
+          <app-button
+            [type]="'submit'"
+            [label]="'Login'"
+          ></app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
